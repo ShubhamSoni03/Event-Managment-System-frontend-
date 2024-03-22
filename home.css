@@ -1,0 +1,144 @@
+/* Global Styles */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('home.jpg'); /* Background image */
+    background-color: #f8f5eb; /* Light creamy background color */
+    color: white; /* Dark text color */
+    line-height: 1.6;
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center top; /* Center the background image vertically and horizontally, but place it at the top */
+    background-attachment: fixed; /* Fixed background image */
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative; /* Set position to relative to contain the background image */
+    z-index: 1; /* Ensure content is above background */
+}
+
+header {
+    background-color: #333; /* Dark header background color */
+    color: #fff; /* White text color */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.home-news {
+    max-height: 150px; /* Adjust based on your design */
+    overflow-y: auto; /* Enables vertical scrollbar when content overflows */
+    padding: 5px;
+    margin: 5px 0;
+    color: black;
+    background-color:white; /* Example background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Soft shadow for depth */
+}
+
+header h1 {
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 36px;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white; /* White link color */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Introduction Section Styles */
+#intro {
+    padding: 50px 0;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#intro .container {
+    text-align: center;
+}
+
+#intro h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#intro p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* Ongoing Events Section Styles */
+#events {
+    padding: 50px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    font-size: large;
+}
+
+#events .container {
+    text-align: center;
+}
+
+#events h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.event-list {
+    max-height: 200px; /* Limiting height for scrollbar */
+    overflow-y: auto; /* Adding scrollbar for overflow */
+    padding: 10px;
+    background-color: white; /* White background color for event list */
+    border-radius: 10px;
+    color: black;
+}
+.event-list::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+}
+
+.event-list::-webkit-scrollbar-track {
+    background-color: transparent; /* Transparent track color */
+}
+
+.event-list::-webkit-scrollbar-thumb {
+    background-color: rgb(235, 228, 228); /* Aqua blue color for scrollbar thumb */
+    border-radius: 10px; /* Border radius for rounded thumb */
+}
+
+.event-list ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.event-list ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;}
+

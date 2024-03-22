@@ -1,0 +1,90 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f5eb; /* Creamy background color */
+    color: #333;
+    line-height: 1.6;
+    background-image: url('contact.jpg'); /* Add background image for consistency */
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Space items evenly */
+    flex-wrap: wrap; /* Wrap items to the next row if needed */
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.95); /* Adjusted transparency for readability */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth effect */
+}
+
+header {
+    width: 100%; /* Ensure header spans full width */
+    background-color: #444; /* Dark header background color */
+    color: #fff; /* White text color */
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 30px; /* Slightly smaller for a balanced look */
+}
+header h3{
+    font-weight: bold;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Volunteer Box Styles */
+.volunteer {
+    width: 45%; /* Adjust width as needed */
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff; /* White background color */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.volunteer h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.volunteer p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Footer Styles Adapted for Consistency */
+footer {
+    width: 100%; /* Ensure footer spans full width */
+    background-color: white; /* Slightly lighter for visual interest */
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px; /* Ensure spacing between content and footer */
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}

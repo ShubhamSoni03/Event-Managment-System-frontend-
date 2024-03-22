@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management System - Events</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="event.css">
+</head>
+<body>
+    <script src="script.js"></script>
+    <header>
+        <h1>Upcoming- Events</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="events">
+        <div class="container">
+            <h2>Upcoming Events</h2>
+            <!-- Add event listings here -->
+            <div id="event-list" class="event-list">
+                <!-- Events will be dynamically added here -->
+             
+              
+            <h3>Tech Symposium:</h3>
+            <p><strong>Description:</strong> A gathering of tech enthusiasts to discuss the latest advancements in technology, featuring keynote speeches, workshops, and networking opportunities.</p>
+            <p><strong>Date:</strong> March 25-27, 2024</p>
+            <p><strong>Location:</strong> City Hall,Jalandhar</p>
+            <p><strong>Registration Fee:</strong> 450rs</p>
+            <p><strong>Benefits of Participation:</strong> Gain insights from industry experts, network with professionals, hands-on workshops, certificate of participation.</p>
+        
+<br>
+        
+            <h3>Cultural Fest:</h3>
+            <p><strong>Description:</strong> A celebration of diverse cultures through music, dance, art, and cuisine, showcasing performances and exhibitions from various cultural groups.</p>
+            <p><strong>Date:</strong> April 10-12, 2024</p>
+            <p><strong>Location:</strong> LPU, Jalandhar</p>
+            <p><strong>Registration Fee:</strong> 700rs</p>
+            <p><strong>Benefits of Participation:</strong> Explore different cultures, enjoy live performances, taste authentic cuisines, participate in interactive workshops.</p>
+       
+        <br>
+        
+            <h3>Cybersecurity Summit:</h3>
+                <p><strong>Description:</strong> A comprehensive summit addressing the latest cybersecurity challenges and solutions, featuring expert-led sessions, hands-on workshops, and networking opportunities.</p>
+                <p><strong>Date:</strong> May 15-17, 2024</p>
+                <p><strong>Location:</strong> Cybersecurity Institute</p>
+                <p><strong>Registration Fee:</strong> 300rs</p>
+                <p><strong>Benefits of Participation:</strong> Enhance cybersecurity knowledge and skills, learn best practices from industry leaders, network with cybersecurity professionals.</p></h4>
+        
+        <br>
+        
+            <h3>Data Science Expo:</h3>
+                <p><strong>Description:</strong> An expo showcasing the latest trends and innovations in data science, featuring presentations, demos, and interactive sessions on data analysis, machine learning, and big data technologies.</p>
+                <p><strong>Date:</strong> June 20-22, 2024</p>
+                <p><strong>Location:</strong> Data Science Center</p>
+                <p><strong>Registration Fee:</strong> 500rs</p>
+                <p><strong>Benefits of Participation:</strong> Explore cutting-edge data science tools and techniques, network with data science professionals, gain insights into industry applications of data science.</p>
+            
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Event Management System. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+    const eventList = document.getElementById('event-list');
+
+    // Example: Dynamically add 20 events
+    for (let i = 1;) {
+        const eventItem = document.createElement('div');
+        eventItem.className = 'event-item'; // Add a class for styling if needed
+        eventItem.textContent = `Event ${i}: This is an example of an event detail.`;
+        eventItem.style.padding = '10px';
+        eventItem.style.marginBottom = '10px';
+        eventItem.style.borderBottom = '1px solid #ccc'; // Example styling
+        
+        eventList.appendChild(eventItem);
+    }
+});
+
+    </script>
+</body>
+</html>

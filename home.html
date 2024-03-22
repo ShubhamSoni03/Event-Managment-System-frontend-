@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management System - Home</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <script src="script.js"></script>
+    <header>
+        <h1>Event Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="intro">
+        <div class="container">
+            <h2>Welcome to Event Management System!</h2>
+            <p>Discover the world of extraordinary events with us. From captivating seminars to exhilarating sports tournaments, we bring you the best of experiences. With seamless organization and impeccable execution, we ensure every event is unforgettable.</p>
+            <p>Experience innovation, inspiration, and interaction like never before. Join us in shaping moments that last a lifetime.</p>
+        </div>
+    </section>
+
+    <section id="events">
+        <div class="container">
+            <h2>Ongoing Events</h2>
+            <div id="home-news" class="home-news">
+                <!-- Dynamically loaded content will go here -->
+              
+                <ul id="events-list">
+                    <li>Tech Symposium - Convention Center, City Name</li>
+                    <li>AI Conference - Tech Hub Conference Center</li>
+                    <li>Cybersecurity Summit - Cybersecurity Institute</li>
+                    <li>Music Festival - Outdoor Venue</li>
+                    <li>Cultural Extravaganza - Community Hall</li>
+                    <!-- Add more ongoing events here -->
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Event Management System. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+       document.addEventListener('DOMContentLoaded', () => {
+    const homeNews = document.getElementById('home-news');
+
+    // Example: Add 10 news items dynamically
+    for (let i = 1) {
+        const newsItem = document.createElement('div');
+        newsItem.className = 'news-item'; // For styling
+        newsItem.textContent = `News Item ${i}: Here's the latest update.`;
+        newsItem.style.padding = '10px';
+        newsItem.style.marginBottom = '10px';
+        newsItem.style.borderBottom = '1px solid #eee'; // Light border for separation
+        
+        homeNews.appendChild(newsItem);
+    }
+});
+
+
+    </script>
+</body>
+</html>
